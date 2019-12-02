@@ -16,15 +16,27 @@ server.connection();
 server.register({
   register: hapiPublicRoute,
   options: {
-    .........
+     path: '/public/{path*}',
+     directories: [
+        'public',
+        'node_modules/xyz-example-module/assets       
+     ],
+     options: {
+        tags: ['my-tag']
+     }
   }
 });
 ```
 
-where ```options``` is an object containing the hapi route options
+where:
+- ```path``` is the path where the static files will be loaded from
 
-eg
-```
-{
-    tags: ['my-tag']
-}
+    Default: '/public/{path*
+        
+- ```directories``` is an array of folders where the static files can be found
+    
+    Default: ['public']
+    
+- ```options``` is an object containing the hapi route options
+
+    Default: {}

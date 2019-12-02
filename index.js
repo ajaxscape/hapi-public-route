@@ -1,5 +1,6 @@
 const register = function (server, opts = {}) {
-  const { path, directories, options } = opts
+  // Set options with defaults if required
+  const { path = '/public/{path*}', directories = ['public'], options = {} } = opts
 
   server.route({
     method: 'GET',
