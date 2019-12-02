@@ -1,0 +1,24 @@
+{
+  "name": "hapi-public-route",
+  "version": "0.1.0",
+  "description": "Hapi public route plugin",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ajaxscape/hapi-public-route.git"
+  },
+  "keywords": [
+    "hapi",
+    "public",
+    "route"
+  ],
+  "author": "Ben Surgison",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/ajaxscape/hapi-public-route/issues"
+  },
+  "homepage": "https://github.com/ajaxscape/hapi-public-route#readme"
+}
