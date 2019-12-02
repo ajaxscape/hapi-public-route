@@ -31,7 +31,7 @@ server.register({
 where:
 - ```path``` is the path where the static files will be loaded from
 
-    Default: '/public/{path*
+    Default: '/public/{path*}'
         
 - ```directories``` is an array of folders where the static files can be found
     
