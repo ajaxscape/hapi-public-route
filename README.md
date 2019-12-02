@@ -9,22 +9,21 @@ Hapi plugin for serving up the public route
 
 ```
 const Hapi = require('hapi');
-const hapiPublicRoute = require('hapi-public-route');
 
-server = new Hapi.Server();
-server.connection();
-server.register({
-  register: hapiPublicRoute,
-  options: {
-     path: '/public/{path*}',
-     directories: [
-        'public',
-        'node_modules/xyz-example-module/assets       
-     ],
-     options: {
-        tags: ['my-tag']
-     }
-  }
+const server = hapi.server();
+  await server.register([{
+      plugin: require('hapi-public-route'),
+      options: {
+        path: '/puplic/{path*}',
+        directories: [
+          'public',
+          'node_modules/xyz-example-module/assets'
+        ],
+        options: {
+          tags: ['my-tag']
+        }
+      }
+    }]);
 });
 ```
 
