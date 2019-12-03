@@ -1,6 +1,6 @@
 {
   "name": "hapi-public-route",
-  "version": "0.1.4",
+  "version": "0.1.5",
   "description": "Hapi public route plugin",
   "main": "index.js",
   "scripts": {
@@ -13,7 +13,10 @@
   "keywords": [
     "hapi",
     "public",
-    "route"
+    "static",
+    "route",
+    "plugin",
+    "hapi-plugin"
   ],
   "author": "Ben Surgison",
   "license": "MIT",
