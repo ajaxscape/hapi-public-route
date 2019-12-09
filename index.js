@@ -2,7 +2,7 @@ const register = function (server, opts = {}) {
   // Set options with defaults if required
   const { path = '/public/{path*}', directories = ['public'], options = {} } = opts
 
-  server.register(require('@hapi/inert'))
+  server.register([require('@hapi/inert')])
 
   server.route({
     method: 'GET',
