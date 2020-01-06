@@ -25,6 +25,6 @@
   },
   "homepage": "https://github.com/ajaxscape/hapi-public-route#readme",
   "dependencies": {
-    "@hapi/inert": "^5.2.2"
+    "@hapi/inert": "^6.0.0"
   }
 }
